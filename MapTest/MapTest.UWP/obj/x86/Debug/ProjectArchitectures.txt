@@ -1,0 +1,1 @@
+C:\Users\break\source\repos\MapTest\MapTest\MapTest.UWP\MapTest.UWP.csproj;x86

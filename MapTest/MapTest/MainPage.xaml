@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:MapTest"
+             x:Class="MapTest.MainPage">
+
+    <AbsoluteLayout>
+        <maps:Map WidthRequest="320" HeightRequest="200"
+            x:Name="mainMap"
+            IsShowingUser="false" 
+            MapType="Street"
+            AbsoluteLayout.LayoutBounds="0,0,1.0,1.0"
+            AbsoluteLayout.LayoutFlags="SizeProportional"      
+        />
+        <Button x:Name="bStreet"
+                AbsoluteLayout.LayoutBounds="0,1.0,.33,.1"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked="streetMap"
+                Text="Street"/>
+        <Button x:Name="bSatellite"
+                AbsoluteLayout.LayoutBounds=".34,1.0,.33,.1"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked="satelliteMap"
+                Text="Satellite"/>
+        <Button x:Name="bHybrid"
+                AbsoluteLayout.LayoutBounds=".67,1.0,.33,.1"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked="hybridMap"
+                Text="Hybrid"/>
+    </AbsoluteLayout>
+
+</ContentPage>
